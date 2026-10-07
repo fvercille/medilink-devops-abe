@@ -6,5 +6,5 @@ patient = {"patient_id": "P-101", "name": "Jane Doe"}
 appointments = [{"id": "A-1", "date": "2026-10-15"}]
 
 # Calls the integration contract and prints formatted JSON
-summary = build_summary(patient, appointments)
+summary = build_summary(patient, appointments, "maintenance")
 print(json.dumps(summary, indent=2))
